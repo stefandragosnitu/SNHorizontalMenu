@@ -22,7 +22,7 @@ pod 'SNHorizontalMenu'
 
 ## Author
 
-nt_stefan@yahoo.com, stefan.nitu@itsmartsystems.eu
+Stefan Dragos Nitu, nitustefandragos@gmail.com
 
 ## License
 
