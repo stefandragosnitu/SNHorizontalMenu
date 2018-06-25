@@ -1,0 +1,22 @@
+{
+  "name": "SNHorizontalMenu",
+  "version": "0.1.0",
+  "summary": "A short description of SNHorizontalMenu.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nt_stefan@yahoo.com/SNHorizontalMenu",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nt_stefan@yahoo.com": "stefan.nitu@itsmartsystems.eu"
+  },
+  "source": {
+    "git": "https://github.com/nt_stefan@yahoo.com/SNHorizontalMenu.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SNHorizontalMenu/Classes/**/*"
+}

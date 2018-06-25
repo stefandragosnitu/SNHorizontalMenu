@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SNHorizontalMenu_Example' do
+  pod 'SNHorizontalMenu', :path => '../'
+
+  target 'SNHorizontalMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

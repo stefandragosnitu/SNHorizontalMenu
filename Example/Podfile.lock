@@ -1,0 +1,16 @@
+PODS:
+  - SNHorizontalMenu (0.1.0)
+
+DEPENDENCIES:
+  - SNHorizontalMenu (from `../`)
+
+EXTERNAL SOURCES:
+  SNHorizontalMenu:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SNHorizontalMenu: 813094564f7349b23aa25592fdff50dcb89a8a5c
+
+PODFILE CHECKSUM: 0a69aaa75891d0e089992993359f5b318baca004
+
+COCOAPODS: 1.4.0

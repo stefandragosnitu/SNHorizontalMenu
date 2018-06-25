@@ -1,0 +1,6 @@
+framework module SNHorizontalMenu {
+  umbrella header "SNHorizontalMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
