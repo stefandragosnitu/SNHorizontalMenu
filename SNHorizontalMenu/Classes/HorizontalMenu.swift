@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HorizontalMenu: UICollectionView {
+open class HorizontalMenu: UICollectionView {
 
     //MARK: public variables
     weak open var horizontalMenuDelegate: HorizontalMenuDelegate?
@@ -38,7 +38,7 @@ class HorizontalMenu: UICollectionView {
         initialize()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
     }
@@ -88,11 +88,11 @@ extension HorizontalMenu {
 //MARK: Collection View DataSource
 extension HorizontalMenu: UICollectionViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return menuItems.count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HorizontalMenuIdentifiers.pageMenuItem.rawValue, for: indexPath) as! HorizontalMenuItemCollectionViewCell
 
         // manage initial selection
@@ -117,7 +117,7 @@ extension HorizontalMenu: UICollectionViewDataSource {
 //MARK: Collection View Delegate
 extension HorizontalMenu: UICollectionViewDelegate {
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //deselect previously selected cell
         if let selectedIndex = self.lastSelectedIndex, let previouslySelectedCell = collectionView.cellForItem(at: selectedIndex) as? HorizontalMenuItemCollectionViewCell {
             previouslySelectedCell.selectionLine.isHidden = true
@@ -135,11 +135,11 @@ extension HorizontalMenu: UICollectionViewDelegate {
 //MARK: Collection View Flow Layout Delegate
 extension HorizontalMenu: UICollectionViewDelegateFlowLayout {
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return menuItemSpacing
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
 }

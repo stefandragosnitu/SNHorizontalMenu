@@ -6,12 +6,12 @@
 import Foundation
 import UIKit
 
-protocol HorizontalMenuDataSource: class {
+public protocol HorizontalMenuDataSource: class {
 
     func pageMenuDataSourceItems() -> [String]
 }
 
-protocol HorizontalMenuDelegate: class {
+public protocol HorizontalMenuDelegate: class {
 
     func didSelectItem(withTitle title: String)
 

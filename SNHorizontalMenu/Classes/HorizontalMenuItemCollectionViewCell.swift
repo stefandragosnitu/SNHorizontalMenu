@@ -8,14 +8,14 @@
 
 import UIKit
 
-class HorizontalMenuItemCollectionViewCell: UICollectionViewCell {
+open class HorizontalMenuItemCollectionViewCell: UICollectionViewCell {
    
     //MARK: IBOutlets
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var selectionLine: UIView!
     
     //MARK: LifeCycle
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
