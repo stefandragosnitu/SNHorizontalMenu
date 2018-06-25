@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0123B704EDD232A4889687B6A697C1F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		0ACC8CBEEA199581FD832BFD74C586C6 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499DF29963A77B6EEFE36C710D552F91 /* ReplaceMe.swift */; };
 		4773EC4629B1438F6313DC9F8186726E /* SNHorizontalMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B0DC3EF5E504D869A5034924B394A2 /* SNHorizontalMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CC86A26D57D0998C3790052913760DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B84CC5986E35ED23793AEF8E2249EE78 /* Pods-SNHorizontalMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDA7241FC756B706A1F6E6EBFACC9B6 /* Pods-SNHorizontalMenu_Tests-dummy.m */; };
+		BB870BA620E0BE14007EDD2E /* HorizontalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA220E0BE13007EDD2E /* HorizontalMenu.swift */; };
+		BB870BA720E0BE14007EDD2E /* HorizontalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA220E0BE13007EDD2E /* HorizontalMenu.swift */; };
+		BB870BA820E0BE14007EDD2E /* HorizontalMenuIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA320E0BE13007EDD2E /* HorizontalMenuIdentifiers.swift */; };
+		BB870BA920E0BE14007EDD2E /* HorizontalMenuIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA320E0BE13007EDD2E /* HorizontalMenuIdentifiers.swift */; };
+		BB870BAA20E0BE14007EDD2E /* HorizontalMenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA420E0BE13007EDD2E /* HorizontalMenuItemCollectionViewCell.swift */; };
+		BB870BAB20E0BE14007EDD2E /* HorizontalMenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA420E0BE13007EDD2E /* HorizontalMenuItemCollectionViewCell.swift */; };
+		BB870BAC20E0BE14007EDD2E /* HorizontalMenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA520E0BE14007EDD2E /* HorizontalMenuProtocols.swift */; };
+		BB870BAD20E0BE14007EDD2E /* HorizontalMenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB870BA520E0BE14007EDD2E /* HorizontalMenuProtocols.swift */; };
 		C505D4B6D4521E60B9438491376A6DA5 /* SNHorizontalMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0B61FC94AAF9377BB7C9A8C17A2E77 /* SNHorizontalMenu-dummy.m */; };
 		E0DCBC618B53FE8C1F0C406D793140C5 /* Pods-SNHorizontalMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95B9CCA6DFDA9C2CB864410178A16E63 /* Pods-SNHorizontalMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -27,26 +34,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02680F1F2FDD67531E1020DC624A0490 /* SNHorizontalMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SNHorizontalMenu.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		02680F1F2FDD67531E1020DC624A0490 /* SNHorizontalMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SNHorizontalMenu.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		27B0DC3EF5E504D869A5034924B394A2 /* SNHorizontalMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNHorizontalMenu-umbrella.h"; sourceTree = "<group>"; };
 		37A052B4629D8B280DF92DF3A611D130 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		499DF29963A77B6EEFE36C710D552F91 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SNHorizontalMenu/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		4C25336F7B1556E20EC8D9927D24B227 /* SNHorizontalMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SNHorizontalMenu.modulemap; sourceTree = "<group>"; };
 		5C4D7B72FB318B4DAD715C0A8BD6677E /* Pods-SNHorizontalMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNHorizontalMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5C7521D0F51D3FBC0089AE2B5058D7D5 /* Pods-SNHorizontalMenu_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNHorizontalMenu_Tests-resources.sh"; sourceTree = "<group>"; };
-		6575DEDBD233EF68662F28EEDA05DFBD /* Pods_SNHorizontalMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SNHorizontalMenu_Tests.framework; path = "Pods-SNHorizontalMenu_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6575DEDBD233EF68662F28EEDA05DFBD /* Pods_SNHorizontalMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNHorizontalMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C067C538E7DB6126F4E17CBF8477A5 /* Pods-SNHorizontalMenu_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNHorizontalMenu_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		742AADED3CA88CCC607876E657B59F1D /* Pods-SNHorizontalMenu_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SNHorizontalMenu_Tests.modulemap"; sourceTree = "<group>"; };
 		77C3155A599AC33B2DAFA1279CE0F5AE /* Pods-SNHorizontalMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNHorizontalMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		86700E9D2EBEC13E30951F2577BC694E /* Pods-SNHorizontalMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNHorizontalMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		899D6589A86A01CD935AAD01BD3F6F91 /* Pods-SNHorizontalMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNHorizontalMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95B9CCA6DFDA9C2CB864410178A16E63 /* Pods-SNHorizontalMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SNHorizontalMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A5B4C0814FD60CB7378B6A10299D342A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A5B4C0814FD60CB7378B6A10299D342A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6C76625B2A4D4ABC8C2F171F9BA6523 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C90B75525E62AE1A5504ECD62326D99F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C9CAE39A6B186E0EDEC5BEF08D08B1F7 /* SNHorizontalMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SNHorizontalMenu.framework; path = SNHorizontalMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB870BA220E0BE13007EDD2E /* HorizontalMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalMenu.swift; sourceTree = "<group>"; };
+		BB870BA320E0BE13007EDD2E /* HorizontalMenuIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalMenuIdentifiers.swift; sourceTree = "<group>"; };
+		BB870BA420E0BE13007EDD2E /* HorizontalMenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalMenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB870BA520E0BE14007EDD2E /* HorizontalMenuProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalMenuProtocols.swift; sourceTree = "<group>"; };
+		C90B75525E62AE1A5504ECD62326D99F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C9CAE39A6B186E0EDEC5BEF08D08B1F7 /* SNHorizontalMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNHorizontalMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDA7241FC756B706A1F6E6EBFACC9B6 /* Pods-SNHorizontalMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNHorizontalMenu_Tests-dummy.m"; sourceTree = "<group>"; };
 		E95043AC6E47B2FD1D5E757E81F606A1 /* SNHorizontalMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNHorizontalMenu-prefix.pch"; sourceTree = "<group>"; };
 		F79DEE4E589BAF75C64B579803AEDC8A /* SNHorizontalMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SNHorizontalMenu.xcconfig; sourceTree = "<group>"; };
@@ -76,7 +86,7 @@
 		248EEC28CA2E26FF92F3EB5D7D31FBF3 /* SNHorizontalMenu */ = {
 			isa = PBXGroup;
 			children = (
-				499DF29963A77B6EEFE36C710D552F91 /* ReplaceMe.swift */,
+				BB870BA020E0BE02007EDD2E /* Classes */,
 				F84205ADEBB64AAAC863FBC3605CE0F2 /* Pod */,
 				DC6C0F67C9F4278442CA87B9C6F42527 /* Support Files */,
 			);
@@ -128,6 +138,18 @@
 				248EEC28CA2E26FF92F3EB5D7D31FBF3 /* SNHorizontalMenu */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BB870BA020E0BE02007EDD2E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB870BA220E0BE13007EDD2E /* HorizontalMenu.swift */,
+				BB870BA320E0BE13007EDD2E /* HorizontalMenuIdentifiers.swift */,
+				BB870BA420E0BE13007EDD2E /* HorizontalMenuItemCollectionViewCell.swift */,
+				BB870BA520E0BE14007EDD2E /* HorizontalMenuProtocols.swift */,
+			);
+			name = Classes;
+			path = SNHorizontalMenu/Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -243,6 +265,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					038D278DF287B1A704EB7570A8B79DA0 = {
+						LastSwiftMigration = 0940;
+					};
+					2B9B355005AB4D2496EEC9FC1C3F363C = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -267,6 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB870BA620E0BE14007EDD2E /* HorizontalMenu.swift in Sources */,
+				BB870BA820E0BE14007EDD2E /* HorizontalMenuIdentifiers.swift in Sources */,
+				BB870BAA20E0BE14007EDD2E /* HorizontalMenuItemCollectionViewCell.swift in Sources */,
+				BB870BAC20E0BE14007EDD2E /* HorizontalMenuProtocols.swift in Sources */,
 				B84CC5986E35ED23793AEF8E2249EE78 /* Pods-SNHorizontalMenu_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACC8CBEEA199581FD832BFD74C586C6 /* ReplaceMe.swift in Sources */,
+				BB870BA720E0BE14007EDD2E /* HorizontalMenu.swift in Sources */,
+				BB870BA920E0BE14007EDD2E /* HorizontalMenuIdentifiers.swift in Sources */,
+				BB870BAB20E0BE14007EDD2E /* HorizontalMenuItemCollectionViewCell.swift in Sources */,
+				BB870BAD20E0BE14007EDD2E /* HorizontalMenuProtocols.swift in Sources */,
 				C505D4B6D4521E60B9438491376A6DA5 /* SNHorizontalMenu-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F79DEE4E589BAF75C64B579803AEDC8A /* SNHorizontalMenu.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -328,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77C3155A599AC33B2DAFA1279CE0F5AE /* Pods-SNHorizontalMenu_Tests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -352,6 +391,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -483,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 899D6589A86A01CD935AAD01BD3F6F91 /* Pods-SNHorizontalMenu_Tests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -506,6 +547,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -517,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F79DEE4E589BAF75C64B579803AEDC8A /* SNHorizontalMenu.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
